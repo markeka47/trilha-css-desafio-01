@@ -1,49 +1,80 @@
 body {
-  /* background-color: black; */
+  background-color: black; 
 }
 
 .banner {
   width: 1440px;
   height: 640px;
-  margin: auto;
-  background-image: url(assets/images/banner.png), linear-gradient(rgba(0, 0, 0, 0.6),rgba(49, 168, 221, 0));
+  background: url(assets/images/banner.png), linear-gradient(180deg, rgba(0, 0, 0, .5) 0%, rgba(49, 168, 221, 0.25) 100%);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: auto;
-  border-bottom: solid 2px rgba(51, 168, 219, 1);
-}
+  border-bottom: solid 1px rgba(51, 168, 219, 1);
+  margin: auto;
+  }
 
 .banner .banner-content {
   padding-top: 57px;
 }
 
-.banner .logo {
+.logo {
   width: 268px;
   height: 268px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   margin: auto;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner h1 {
+h1 {
   font-family: Raleway;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 40px;
   line-height: 49.96px;
   color: #FFFFFF;
+  width: 1440px;
+  height: 47px;
   text-align: center;
+  background-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: black;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .banner p {
+  margin: auto;
   width: 510px;
   height: 46px;
-  margin: auto;
   font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   line-height: 23.48px;
   color: #FFFFFF;
   text-align: justify;
+  word-break: break-all;
+}
+
+button {
+  width: 326px;
+  height: 57px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  border-image-slice: 1;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  color:rgba(49, 168, 221, 1);
+  margin-top: 25px;
+  margin-left: 557px;
+  margin-right: 557px;
+  align-content: center;
 }
